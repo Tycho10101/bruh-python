@@ -5,7 +5,7 @@ Also known as BRUHIFF or BRUH.
 
 Now in python
 
-#Requirements
+# Requirements
 - Pillow
 
 # How to create bruh
