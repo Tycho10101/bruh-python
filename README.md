@@ -26,4 +26,4 @@ Now in python
 # Known issues
 1. Huge file size on large images.
 2. No transparency.
-3. Viewer Slow
+3. Viewer Slow on larger images
