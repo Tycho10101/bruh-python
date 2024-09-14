@@ -19,8 +19,11 @@ Now in python
 3. Run `bruhdeconverter.py` followed by a `path/to/image.bruh` to compile BRUH to PNG. Example: `bruhdeconverter.py C:\Uses\User\Downloads\image.bruh`
 
 ## How to view bruh
-1. Use face's bruh.exe fn
+1. Download the repo / `git clone` it.
+2. Open a command prompt in the directory / `cd bruh-python`
+3. Run `bruhviewer.py` followed by a `path/to/image.bruh` to compile BRUH to PNG. Example: `bruhviewer.py C:\Uses\User\Downloads\image.bruh`
 
 # Known issues
 1. Huge file size on large images.
 2. No transparency.
+3. Viewer Slow
