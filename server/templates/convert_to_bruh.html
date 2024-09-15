@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Convert to .bruh</title>
+</head>
+<body>
+    <h1>Convert Image to .bruh</h1>
+
+    <!-- Flash Message for Resizing -->
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="flash-message">
+          {% for message in messages %}
+            <p>{{ message }}</p>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+
+    <form method="POST" enctype="multipart/form-data" action="/process_bruh">
+        <input type="file" name="image" accept="image/*">
+        <button type="submit">Convert</button>
+    </form>
+    <a href="/">Go back</a>
+</body>
+</html>

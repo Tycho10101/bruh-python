@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Download .bruh</title>
+</head>
+<body>
+    <h1>Your Bruh File is Ready</h1>
+
+    <!-- Flash Message for Resizing -->
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="flash-message">
+          {% for message in messages %}
+            <p>{{ message }}</p>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+
+    {% if file_ready %}
+        <a href="/download_file">Download .bruh File</a>
+    {% else %}
+        <p>File is not ready yet.</p>
+    {% endif %}
+    
+    <a href="/">Go back</a>
+</body>
+</html>

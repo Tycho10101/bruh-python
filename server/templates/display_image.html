@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Bruh Image Viewer</title>
+</head>
+<body>
+    <h1>Your Bruh Image</h1>
+    <img src="data:image/png;base64,{{ img_data }}" alt="Bruh Image" />
+    <a href="/">Go back</a>
+</body>
+</html>
