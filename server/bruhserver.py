@@ -50,8 +50,8 @@ def process_bruh():
         flash("Image was too large and has been resized to fit within the limit.")
 
     width, height = img.size
-    bwidth = width.to_bytes(length=4, byteorder='big')
-    bheight = height.to_bytes(length=4, byteorder='big')
+    bwidth = width.to_bytes(length=4, byteorder='little')
+    bheight = height.to_bytes(length=4, byteorder='little')
 
     bruh_data = bwidth + bheight
     for iy in range(height):
@@ -100,8 +100,8 @@ def process_image():
     bruh_data = file.read()
 
     # Extract width and height from the first 8 bytes
-    width = int.from_bytes(bruh_data[0:4], byteorder='big')
-    height = int.from_bytes(bruh_data[4:8], byteorder='big')
+    width = int.from_bytes(bruh_data[0:4], byteorder='little')
+    height = int.from_bytes(bruh_data[4:8], byteorder='little')
 
     pixel_data = bruh_data[8:].split(b'\n')
 
@@ -134,8 +134,8 @@ def display_bruh():
     bruh_data = file.read()
 
     # Extract width and height from the first 8 bytes
-    width = int.from_bytes(bruh_data[0:4], byteorder='big')
-    height = int.from_bytes(bruh_data[4:8], byteorder='big')
+    width = int.from_bytes(bruh_data[0:4], byteorder='little')
+    height = int.from_bytes(bruh_data[4:8], byteorder='little')
 
     pixel_data = bruh_data[8:].split(b'\n')
 
