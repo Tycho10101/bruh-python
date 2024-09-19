@@ -3,7 +3,7 @@
 
 Also known as BRUHIFF or BRUH.
 
-Now in python
+Now in python (Better Image File Format at [this repo](https://github.com/Tycho10101/pog/))
 
 ## Requirements
 - Pillow
@@ -30,7 +30,7 @@ Now in python
 3. Run `bruhserver.py`
 4. Now goto [http://localhost:5000/](http://localhost:5000/) if held localy, else goto the ip of the server
 
-# Known issues
+# Known issues (Reduced or removed at [this repo](https://github.com/Tycho10101/pog/))
 1. Huge file size on large images.
 2. No transparency.
 3. Viewer Slow on larger images
